@@ -18,7 +18,7 @@ document.getElementById('rzp-button1').onclick = function(e){
     let order =await fetch("/payment",{
         method:"POST",
         headers:{
-            "Content-Type":"aoolication/json"
+            "Content-Type":"aoolication/json"       
         },
         body:JSON.stringify({
             amount:500,
@@ -26,8 +26,8 @@ document.getElementById('rzp-button1').onclick = function(e){
     })
     let orderData= await order.json()
     var options = {
-    "key": "rzp_test_KVEXPxDVJKyTGw", // Enter the Key ID generated from the Dashboard
-    "amount": "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "key": "rzp_test_AxsURObWFogMy4",
+    "amount": "500", 
     "currency": "INR",
     
     "handler": function (response){
