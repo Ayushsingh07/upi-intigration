@@ -11,7 +11,7 @@ app.get("/",(res,req)=>{
 app.post("/payment",async(req,res)=>{
     
     let {amount}=req.body
-    var instance = new Razorpay({ key_id: 'rzp_test_KVEXPxDVJKyTGw', key_secret: 'YksuE2APttE2JzEzF6LY7yG4' })
+    var instance = new Razorpay({ key_id: 'rzp_test_AxsURObWFogMy4', key_secret: 'iqJFm2wrxirNNd0YRbFd0LHC' })
 
     let order =await instance.orders.create({
         amount: amount*100,
